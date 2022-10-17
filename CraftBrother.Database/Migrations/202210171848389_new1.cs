@@ -1,0 +1,33 @@
+﻿namespace CraftBrother.Database.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class new1 : DbMigration
+    {
+        public override void Up()
+        {
+            CreateTable(
+                "dbo.Brands",
+                c => new
+                    {
+                        ID = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
+                        Description = c.String(),
+                    })
+                .PrimaryKey(t => t.ID);
+            
+            AddColumn("dbo.Products", "Brand_ID", c => c.Int());
+            CreateIndex("dbo.Products", "Brand_ID");
+            AddForeignKey("dbo.Products", "Brand_ID", "dbo.Brands", "ID");
+        }
+        
+        public override void Down()
+        {
+            DropForeignKey("dbo.Products", "Brand_ID", "dbo.Brands");
+            DropIndex("dbo.Products", new[] { "Brand_ID" });
+            DropColumn("dbo.Products", "Brand_ID");
+            DropTable("dbo.Brands");
+        }
+    }
+}

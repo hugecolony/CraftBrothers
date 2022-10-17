@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraftBrothers.Web", "CraftBrothers.Web\CraftBrothers.Web.csproj", "{E2B67A20-4EBA-4566-9981-427C1BA35BD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraftBrother.Web", "CraftBrothers.Web\CraftBrother.Web.csproj", "{E2B67A20-4EBA-4566-9981-427C1BA35BD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraftBrother.Entities", "CraftBrothers.Entities\CraftBrother.Entities.csproj", "{CD5FF627-0ABA-460D-95E6-FC6CB88BD2A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CraftBrother.Database", "CraftBrother.Database\CraftBrother.Database.csproj", "{60618925-A0AC-4D97-982C-2EA7D87CFC74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{E2B67A20-4EBA-4566-9981-427C1BA35BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2B67A20-4EBA-4566-9981-427C1BA35BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2B67A20-4EBA-4566-9981-427C1BA35BD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD5FF627-0ABA-460D-95E6-FC6CB88BD2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD5FF627-0ABA-460D-95E6-FC6CB88BD2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD5FF627-0ABA-460D-95E6-FC6CB88BD2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD5FF627-0ABA-460D-95E6-FC6CB88BD2A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60618925-A0AC-4D97-982C-2EA7D87CFC74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60618925-A0AC-4D97-982C-2EA7D87CFC74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60618925-A0AC-4D97-982C-2EA7D87CFC74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60618925-A0AC-4D97-982C-2EA7D87CFC74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
